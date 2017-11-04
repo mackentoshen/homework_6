@@ -1,4 +1,4 @@
-.page-header    {
+.page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,19 +7,21 @@
   z-index: 5;
 }
 
-.header-nav ul  {
+.header-nav ul {
   display: flex;
   flex-direction: row;
-}
 
-.header-nav li a {
-  margin-right: 25px;
-  color: #ffffff;
-  font:bold 13px 'Roboto', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.33px;
-}
+  li {
+    a {
+      margin-right: 25px;
+      color: #ffffff;
+      font:bold 13px 'Roboto', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.33px;
+    }
 
-.header-nav li:last-child {
-  margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

@@ -24,33 +24,34 @@
   z-index: 5;
   max-width: 770px;
   padding: 100px 0 70px 0;
-}
 
-.welcome-content h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  color: #ffffff;
-  font: bold 32px 'Playfair Display', serif;
-  letter-spacing: 0.32px;
+  h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #ffffff;
+    font: bold 32px 'Playfair Display', serif;
+    letter-spacing: 0.32px;
 
-  &:after {
-    background-color: #00e0d0;
+    &:after {
+      background-color: #00e0d0;
+    }
+  }
+
+  p {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #ffffff;
+    font: 300 14px/24px 'Roboto', sans-serif;
+    letter-spacing: 0.7px;
+  }
+
+  .button {
+    margin-bottom: 125px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
   }
 }
 
-.welcome-content p {
-  margin-bottom: 50px;
-  text-align: center;
-  color: #ffffff;
-  font: 300 14px/24px 'Roboto', sans-serif;
-  letter-spacing: 0.7px;
-}
-
-.welcome-content .button {
-  margin-bottom: 125px;
-}
-
-.welcome-content img {
-  display: block;
-  margin: 0 auto;
-}

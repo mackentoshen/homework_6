@@ -29,16 +29,16 @@
   text-transform: uppercase;
   letter-spacing: 0.8px;
   z-index: 5;
-}
 
-.video-story p:before {
-  content: '';
-  width: 100px;
-  height: 100px;
-  display: block;
-  top: 35vh;
-  left: calc(50% - 50px);
-  position: absolute;
-  background: url("../../images/play-button.png") center center no-repeat;
-  background-size: contain;
+  &:before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: block;
+    top: 35vh;
+    left: calc(50% - 50px);
+    position: absolute;
+    background: url("../../images/play-button.png") center center no-repeat;
+    background-size: contain;
+  }
 }

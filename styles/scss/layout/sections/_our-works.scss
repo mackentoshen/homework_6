@@ -1,21 +1,20 @@
-
 .our-works {
   padding: 70px 0;
-}
 
-.our-works .portfolio-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 70px;
-}
+  .portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
 
-.our-works .portfolio-header a {
-  color: #413d4b;
-  font: 300 14px 'Roboto', sans-serif;
-  letter-spacing: 0.7px;
+    a {
+      color: #413d4b;
+      font: 300 14px 'Roboto', sans-serif;
+      letter-spacing: 0.7px;
 
-  i {
-    font-size: 20px;
+      i {
+        font-size: 20px;
+      }
+    }
   }
 }
 
