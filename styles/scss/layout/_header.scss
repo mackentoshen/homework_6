@@ -1,0 +1,25 @@
+.page-header    {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  position: relative;
+  z-index: 5;
+}
+
+.header-nav ul  {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-nav li a {
+  margin-right: 25px;
+  color: #ffffff;
+  font:bold 13px 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.33px;
+}
+
+.header-nav li:last-child {
+  margin-right: 0;
+}

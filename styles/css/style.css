@@ -63,19 +63,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 4, ../scss/style.scss */
+/* line 2, ../scss/base/_base.scss */
 .wrapper {
   max-width: 950px;
   margin: 0 auto;
 }
 
-/* line 9, ../scss/style.scss */
+/* line 7, ../scss/base/_base.scss */
 a {
   text-decoration: none;
   list-style-type: none;
 }
 
-/* line 14, ../scss/style.scss */
+/* line 12, ../scss/base/_base.scss */
 .button {
   display: block;
   margin: 0 auto;
@@ -85,19 +85,22 @@ a {
   font: 400 16px 'Hammersmith One', sans-serif;
   text-transform: uppercase;
   border: 1px solid #00e0d0;
+  position: relative;
+  z-index: 5;
 }
 
-/* line 25, ../scss/style.scss */
+/* line 25, ../scss/base/_base.scss */
 button:hover {
   cursor: pointer;
 }
 
-/* line 29, ../scss/style.scss */
+/* line 29, ../scss/base/_base.scss */
 .line-after-80 {
   position: relative;
+  z-index: 5;
 }
 
-/* line 33, ../scss/style.scss */
+/* line 34, ../scss/base/_base.scss */
 .line-after-80:after {
   content: '';
   display: block;
@@ -110,20 +113,20 @@ button:hover {
   left: calc(50% - 25px);
 }
 
-/* line 45, ../scss/style.scss */
+/* line 46, ../scss/base/_base.scss */
 h3 {
   font: 700 22px 'Playfair Display', serif;
   text-transform: uppercase;
   letter-spacing: 1.1px;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 52, ../scss/base/_base.scss */
 .logo {
   width: 130px;
   height: 50px;
 }
 
-/* line 56, ../scss/style.scss */
+/* line 57, ../scss/base/_base.scss */
 .section-header-black h3 {
   text-align: center;
   margin-bottom: 10px;
@@ -133,7 +136,7 @@ h3 {
   letter-spacing: 1.1px;
 }
 
-/* line 65, ../scss/style.scss */
+/* line 66, ../scss/base/_base.scss */
 .section-header-black p {
   text-align: center;
   margin-bottom: 70px;
@@ -142,7 +145,7 @@ h3 {
   letter-spacing: 1.05px;
 }
 
-/* line 73, ../scss/style.scss */
+/* line 74, ../scss/base/_base.scss */
 .section-header-white h3 {
   text-align: center;
   margin-bottom: 10px;
@@ -150,27 +153,61 @@ h3 {
   font: 700 22px 'Playfair Display', serif;
   text-transform: uppercase;
   letter-spacing: 1.1px;
+  position: relative;
+  z-index: 5;
 }
 
-/* line 82, ../scss/style.scss */
+/* line 85, ../scss/base/_base.scss */
 .section-header-white p {
   text-align: center;
   margin-bottom: 70px;
   color: #f9f9f9;
   font: 400 14px 'Playfair Display', serif;
   letter-spacing: 1.05px;
+  position: relative;
+  z-index: 5;
 }
 
-/********************WELCOME SECTION************************/
-/* line 91, ../scss/style.scss */
+/* line 1, ../scss/layout/_header.scss */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  position: relative;
+  z-index: 5;
+}
+
+/* line 10, ../scss/layout/_header.scss */
+.header-nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 15, ../scss/layout/_header.scss */
+.header-nav li a {
+  margin-right: 25px;
+  color: #ffffff;
+  font: bold 13px 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.33px;
+}
+
+/* line 23, ../scss/layout/_header.scss */
+.header-nav li:last-child {
+  margin-right: 0;
+}
+
+/* line 2, ../scss/layout/sections/_welcome-section.scss */
 .welcome-section {
   background: url("../../images/put-your-image-here.png") center center no-repeat;
   background-size: cover;
   height: 100vh;
   padding: 0;
   position: relative;
+  z-index: 5;
 }
-/* line 98, ../scss/style.scss */
+/* line 10, ../scss/layout/sections/_welcome-section.scss */
 .welcome-section:after {
   content: '';
   width: 100%;
@@ -182,39 +219,7 @@ h3 {
   position: absolute;
 }
 
-/******************HEADER***************************/
-/* line 112, ../scss/style.scss */
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 0;
-  position: relative;
-  z-index: 5;
-}
-
-/* line 121, ../scss/style.scss */
-.header-nav ul {
-  display: flex;
-  flex-direction: row;
-}
-
-/* line 126, ../scss/style.scss */
-.header-nav li a {
-  margin-right: 25px;
-  color: #ffffff;
-  font: bold 13px 'Roboto', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.33px;
-}
-
-/* line 134, ../scss/style.scss */
-.header-nav li:last-child {
-  margin-right: 0;
-}
-
-/***************/
-/* line 140, ../scss/style.scss */
+/* line 22, ../scss/layout/sections/_welcome-section.scss */
 .welcome-content {
   position: relative;
   z-index: 5;
@@ -222,7 +227,7 @@ h3 {
   padding: 100px 0 70px 0;
 }
 
-/* line 147, ../scss/style.scss */
+/* line 29, ../scss/layout/sections/_welcome-section.scss */
 .welcome-content h2 {
   margin-bottom: 50px;
   text-align: center;
@@ -230,12 +235,12 @@ h3 {
   font: bold 32px 'Playfair Display', serif;
   letter-spacing: 0.32px;
 }
-/* line 154, ../scss/style.scss */
+/* line 36, ../scss/layout/sections/_welcome-section.scss */
 .welcome-content h2:after {
   background-color: #00e0d0;
 }
 
-/* line 159, ../scss/style.scss */
+/* line 41, ../scss/layout/sections/_welcome-section.scss */
 .welcome-content p {
   margin-bottom: 50px;
   text-align: center;
@@ -244,37 +249,36 @@ h3 {
   letter-spacing: 0.7px;
 }
 
-/* line 167, ../scss/style.scss */
+/* line 49, ../scss/layout/sections/_welcome-section.scss */
 .welcome-content .button {
   margin-bottom: 125px;
 }
 
-/* line 171, ../scss/style.scss */
+/* line 53, ../scss/layout/sections/_welcome-section.scss */
 .welcome-content img {
   display: block;
   margin: 0 auto;
 }
 
-/*********************OUR HISTORY*************************/
-/* line 178, ../scss/style.scss */
+/* line 2, ../scss/layout/sections/_our-story.scss */
 .our-story {
   display: flex;
   justify-content: space-between;
   padding: 70px 0;
 }
 
-/* line 184, ../scss/style.scss */
+/* line 8, ../scss/layout/sections/_our-story.scss */
 .our-story-content {
   max-width: 540px;
 }
 
-/* line 188, ../scss/style.scss */
+/* line 12, ../scss/layout/sections/_our-story.scss */
 .our-story-content h3 {
   color: #413d4b;
   margin-bottom: 30px;
 }
 
-/* line 193, ../scss/style.scss */
+/* line 17, ../scss/layout/sections/_our-story.scss */
 .our-story-content p {
   margin-bottom: 30px;
   opacity: 0.75;
@@ -283,16 +287,28 @@ h3 {
   letter-spacing: 0.42px;
 }
 
-/****************VIDEO STORY**************************/
-/* line 203, ../scss/style.scss */
+/* line 2, ../scss/layout/sections/_video-story.scss */
 .video-story {
   background: url("../../images/town.png") center center no-repeat;
   background-size: cover;
   height: 100vh;
   padding: 0;
+  position: relative;
+  z-index: 5;
+}
+/* line 10, ../scss/layout/sections/_video-story.scss */
+.video-story:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85;
+  position: absolute;
 }
 
-/* line 210, ../scss/style.scss */
+/* line 22, ../scss/layout/sections/_video-story.scss */
 .video-story p {
   display: block;
   text-align: center;
@@ -302,9 +318,10 @@ h3 {
   font: 400 16px 'Roboto', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.8px;
+  z-index: 5;
 }
 
-/* line 221, ../scss/style.scss */
+/* line 34, ../scss/layout/sections/_video-story.scss */
 .video-story p:before {
   content: '';
   width: 100px;
@@ -317,13 +334,12 @@ h3 {
   background-size: contain;
 }
 
-/****************EXPERTISE************************/
-/* line 235, ../scss/style.scss */
+/* line 2, ../scss/layout/sections/_expertise.scss */
 .expertise {
   padding: 70px 0;
 }
 
-/* line 239, ../scss/style.scss */
+/* line 6, ../scss/layout/sections/_expertise.scss */
 .expertise ul {
   display: flex;
   align-items: stretch;
@@ -331,7 +347,7 @@ h3 {
   padding: 0;
 }
 
-/* line 246, ../scss/style.scss */
+/* line 13, ../scss/layout/sections/_expertise.scss */
 .expertise li {
   position: relative;
   max-width: 314px;
@@ -339,7 +355,7 @@ h3 {
   border: 1px solid #ebebeb;
 }
 
-/* line 253, ../scss/style.scss */
+/* line 20, ../scss/layout/sections/_expertise.scss */
 .expertise li:before {
   content: '';
   width: 50px;
@@ -351,65 +367,65 @@ h3 {
   background-size: contain;
 }
 
-/* line 264, ../scss/style.scss */
+/* line 31, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(1) {
   border-left-color: transparent;
   border-top: none;
 }
-/* line 267, ../scss/style.scss */
+/* line 34, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(1):before {
   background: url("../../images/monitor.png") center center no-repeat;
 }
 
-/* line 272, ../scss/style.scss */
+/* line 39, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(2) {
   border-top: none;
 }
-/* line 274, ../scss/style.scss */
+/* line 41, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(2):before {
   background: url("../../images/brush.png") center center no-repeat;
 }
 
-/* line 279, ../scss/style.scss */
+/* line 46, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(3) {
   border-right-color: transparent;
   border-top: none;
 }
-/* line 282, ../scss/style.scss */
+/* line 49, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(3):before {
   background: url("../../images/phone.png") center center no-repeat;
 }
 
-/* line 287, ../scss/style.scss */
+/* line 54, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(4) {
   border-left-color: transparent;
   border-bottom: none;
 }
-/* line 290, ../scss/style.scss */
+/* line 57, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(4):before {
   background: url("../../images/sector.png") center center no-repeat;
 }
 
-/* line 295, ../scss/style.scss */
+/* line 62, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(5) {
   border-bottom: none;
 }
-/* line 297, ../scss/style.scss */
+/* line 64, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(5):before {
   background: url("../../images/console.png") center center no-repeat;
 }
 
-/* line 302, ../scss/style.scss */
+/* line 69, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(6) {
   border-right-color: transparent;
   border-bottom: none;
 }
-/* line 305, ../scss/style.scss */
+/* line 72, ../scss/layout/sections/_expertise.scss */
 .expertise li:nth-child(6):before {
   background: url("../../images/heart.png") center center no-repeat;
 }
 
-/* line 311, ../scss/style.scss */
+/* line 78, ../scss/layout/sections/_expertise.scss */
 .expertise li h4 {
   text-align: center;
   margin-bottom: 25px;
@@ -419,7 +435,7 @@ h3 {
   letter-spacing: 0.7px;
 }
 
-/* line 320, ../scss/style.scss */
+/* line 87, ../scss/layout/sections/_expertise.scss */
 .expertise li p {
   text-align: center;
   max-width: 254px;
@@ -429,43 +445,64 @@ h3 {
   letter-spacing: 0.7px;
 }
 
-/****************************OUR TEAM******************************/
-/* line 331, ../scss/style.scss */
+/* line 2, ../scss/layout/sections/_our-team.scss */
 .our-team {
-  background: url("../../images/put-your-image-here.png") center center no-repeat;
+  background: url("../../images/trees.png") center center no-repeat;
   background-size: cover;
   padding: 70px 0;
+  position: relative;
 }
-/* line 336, ../scss/style.scss */
+/* line 8, ../scss/layout/sections/_our-team.scss */
+.our-team:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85;
+  position: absolute;
+}
+
+/* line 20, ../scss/layout/sections/_our-team.scss */
 .our-team .section-header-white {
   margin-bottom: 70px;
 }
+/* line 23, ../scss/layout/sections/_our-team.scss */
+.our-team .section-header-white p:after {
+  background-color: #ffffff;
+  opacity: 0.2;
+}
 
-/* line 341, ../scss/style.scss */
+/* line 29, ../scss/layout/sections/_our-team.scss */
 .our-team ul {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 5;
 }
-/* line 345, ../scss/style.scss */
+/* line 35, ../scss/layout/sections/_our-team.scss */
 .our-team ul li {
   width: 25%;
   padding: 0 10px;
 }
-/* line 350, ../scss/style.scss */
+/* line 40, ../scss/layout/sections/_our-team.scss */
 .our-team ul .face {
   width: 100%;
 }
 
-/* line 355, ../scss/style.scss */
+/* line 45, ../scss/layout/sections/_our-team.scss */
 .our-team p {
   text-align: center;
   margin-bottom: 25px;
   color: #f3f3f3;
   font: 300 14px 'Roboto', sans-serif;
   letter-spacing: 0.7px;
+  position: relative;
+  z-index: 5;
 }
 
-/* line 363, ../scss/style.scss */
+/* line 55, ../scss/layout/sections/_our-team.scss */
 .our-team .person {
   margin-top: -3px;
   padding: 20px 0;
@@ -473,7 +510,7 @@ h3 {
   margin-bottom: 70px;
 }
 
-/* line 370, ../scss/style.scss */
+/* line 62, ../scss/layout/sections/_our-team.scss */
 .our-team .person h4 {
   text-align: center;
   color: #ffffff;
@@ -482,7 +519,7 @@ h3 {
   letter-spacing: 0.7px;
 }
 
-/* line 378, ../scss/style.scss */
+/* line 70, ../scss/layout/sections/_our-team.scss */
 .our-team .person p {
   text-align: center;
   margin: 0;
@@ -492,31 +529,30 @@ h3 {
   text-transform: uppercase;
 }
 
-/**********************OUR-WORKS****************************/
-/* line 390, ../scss/style.scss */
+/* line 2, ../scss/layout/sections/_our-works.scss */
 .our-works {
   padding: 70px 0;
 }
 
-/* line 394, ../scss/style.scss */
+/* line 6, ../scss/layout/sections/_our-works.scss */
 .our-works .portfolio-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 70px;
 }
 
-/* line 400, ../scss/style.scss */
+/* line 12, ../scss/layout/sections/_our-works.scss */
 .our-works .portfolio-header a {
   color: #413d4b;
   font: 300 14px 'Roboto', sans-serif;
   letter-spacing: 0.7px;
 }
-/* line 405, ../scss/style.scss */
+/* line 17, ../scss/layout/sections/_our-works.scss */
 .our-works .portfolio-header a i {
   font-size: 20px;
 }
 
-/* line 410, ../scss/style.scss */
+/* line 22, ../scss/layout/sections/_our-works.scss */
 .our-works .portfolio-content {
   display: flex;
   justify-content: center;
@@ -524,25 +560,37 @@ h3 {
   margin-bottom: 70px;
   overflow: hidden;
 }
-/* line 417, ../scss/style.scss */
+/* line 29, ../scss/layout/sections/_our-works.scss */
 .our-works .portfolio-content li {
   width: 16.6%;
 }
-/* line 420, ../scss/style.scss */
+/* line 32, ../scss/layout/sections/_our-works.scss */
 .our-works .portfolio-content li img {
   width: 100%;
   height: 100%;
 }
 
-/**************CEO-ARTICLE*********************/
-/* line 429, ../scss/style.scss */
+/* line 2, ../scss/layout/sections/_ceo-article.scss */
 .ceo-article {
-  background: url("../../images/our ceo.png") center center no-repeat;
+  background: url("../../images/CEO.png") center center no-repeat;
   background-size: cover;
   padding: 140px 0 70px 0;
+  height: 100vh;
+  position: relative;
+}
+/* line 10, ../scss/layout/sections/_ceo-article.scss */
+.ceo-article:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85;
+  position: absolute;
 }
 
-/* line 435, ../scss/style.scss */
+/* line 22, ../scss/layout/sections/_ceo-article.scss */
 .ceo-article-content blockquote {
   max-width: 770px;
   position: relative;
@@ -552,9 +600,10 @@ h3 {
   color: #ffffff;
   font: 400 16px/26px 'Playfair Display', serif;
   letter-spacing: 0.4px;
+  z-index: 5;
 }
 
-/* line 446, ../scss/style.scss */
+/* line 34, ../scss/layout/sections/_ceo-article.scss */
 .ceo-article-content blockquote:before {
   content: '"';
   width: 32px;
@@ -568,16 +617,18 @@ h3 {
   color: #ffffff;
 }
 
-/* line 459, ../scss/style.scss */
+/* line 47, ../scss/layout/sections/_ceo-article.scss */
 .ceo-article-content h4 {
   text-align: center;
   margin-bottom: 10px;
   color: #ffffff;
   font: bold 14px/22px 'Roboto', sans-serif;
   letter-spacing: 0.7px;
+  position: relative;
+  z-index: 5;
 }
 
-/* line 467, ../scss/style.scss */
+/* line 57, ../scss/layout/sections/_ceo-article.scss */
 .ceo-article-content p {
   text-align: center;
   margin-bottom: 45px;
@@ -585,37 +636,40 @@ h3 {
   color: #ffffff;
   font: 300 13px/22px 'Roboto', sans-serif;
   text-transform: uppercase;
+  position: relative;
+  z-index: 5;
 }
 
-/* line 476, ../scss/style.scss */
+/* line 68, ../scss/layout/sections/_ceo-article.scss */
 .ceo-article-content img {
   display: block;
   margin: 0 auto;
+  position: relative;
+  z-index: 5;
 }
 
-/**********************CLIENTS-PAGE***************************/
-/* line 483, ../scss/style.scss */
+/* line 2, ../scss/layout/sections/_clients-page.scss */
 .clients-page {
   padding: 70px 0;
 }
 
-/* line 487, ../scss/style.scss */
+/* line 6, ../scss/layout/sections/_clients-page.scss */
 .clients-page-content {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 492, ../scss/style.scss */
+/* line 11, ../scss/layout/sections/_clients-page.scss */
 .clients-page-content .form {
   max-width: 470px;
 }
 
-/* line 496, ../scss/style.scss */
+/* line 15, ../scss/layout/sections/_clients-page.scss */
 .clients-page-content .form h3 {
   margin-bottom: 35px;
 }
 
-/* line 500, ../scss/style.scss */
+/* line 19, ../scss/layout/sections/_clients-page.scss */
 .clients-page-content .form input, textarea {
   width: 460px;
   padding: 15px;
@@ -628,30 +682,30 @@ h3 {
   margin-bottom: 25px;
 }
 
-/* line 512, ../scss/style.scss */
+/* line 31, ../scss/layout/sections/_clients-page.scss */
 .clients-page-content .clients {
   max-width: 385px;
 }
 
-/* line 516, ../scss/style.scss */
+/* line 35, ../scss/layout/sections/_clients-page.scss */
 .clients-page-content .clients h3 {
   margin-bottom: 45px;
 }
 
-/* line 520, ../scss/style.scss */
+/* line 39, ../scss/layout/sections/_clients-page.scss */
 .clients-page-content .clients .brands-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-/* line 526, ../scss/style.scss */
+/* line 45, ../scss/layout/sections/_clients-page.scss */
 .clients-page-content .clients .brands-list li {
   min-width: 165px;
   margin-bottom: 45px;
 }
 
-/* line 531, ../scss/style.scss */
+/* line 50, ../scss/layout/sections/_clients-page.scss */
 .form-btn {
   width: 130px;
   margin: 0;
@@ -659,27 +713,40 @@ h3 {
   padding: 12px 0;
 }
 
-/************************FOOTER*****************************/
-/* line 541, ../scss/style.scss */
+/* line 2, ../scss/layout/_footer.scss */
 .page-footer {
-  background: url("../../images/footer-backgr.png") center center no-repeat;
+  background: url("../../images/footer-background.png") center center no-repeat;
   background-size: cover;
   padding: 70px 0;
+  position: relative;
+}
+/* line 8, ../scss/layout/_footer.scss */
+.page-footer:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85;
+  position: absolute;
 }
 
-/* line 547, ../scss/style.scss */
+/* line 20, ../scss/layout/_footer.scss */
 .footer-top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
+  position: relative;
+  z-index: 5;
 }
 
-/* line 553, ../scss/style.scss */
+/* line 28, ../scss/layout/_footer.scss */
 .footer-top-content {
   max-width: 300px;
 }
 
-/* line 557, ../scss/style.scss */
+/* line 32, ../scss/layout/_footer.scss */
 .footer-top-content h4 {
   color: #ffffff;
   font: 400 15px/26px 'Roboto', sans-serif;
@@ -687,31 +754,31 @@ h3 {
   letter-spacing: 0.75px;
 }
 
-/* line 564, ../scss/style.scss */
+/* line 39, ../scss/layout/_footer.scss */
 .footer-top-content p {
   color: #ffffff;
   font: 300 14px/26px 'Roboto', sans-serif;
   letter-spacing: 0.35px;
 }
 
-/* line 570, ../scss/style.scss */
+/* line 45, ../scss/layout/_footer.scss */
 .logo-block img {
   margin-bottom: 30px;
 }
 
-/* line 574, ../scss/style.scss */
+/* line 49, ../scss/layout/_footer.scss */
 .contacts h4 {
   line-height: 50px;
   margin-bottom: 40px;
 }
 
-/* line 579, ../scss/style.scss */
+/* line 54, ../scss/layout/_footer.scss */
 .contacts .adress, .phone {
   margin: 0 0 15px 30px;
   position: relative;
 }
 
-/* line 584, ../scss/style.scss */
+/* line 59, ../scss/layout/_footer.scss */
 .contacts .adress:before {
   position: absolute;
   content: "";
@@ -724,7 +791,7 @@ h3 {
   background-size: contain;
 }
 
-/* line 596, ../scss/style.scss */
+/* line 71, ../scss/layout/_footer.scss */
 .contacts .phone:before {
   position: absolute;
   content: "";
@@ -737,13 +804,13 @@ h3 {
   background-size: contain;
 }
 
-/* line 608, ../scss/style.scss */
+/* line 83, ../scss/layout/_footer.scss */
 .subscribe h4 {
   line-height: 50px;
   margin-bottom: 40px;
 }
 
-/* line 613, ../scss/style.scss */
+/* line 88, ../scss/layout/_footer.scss */
 .subscribe input {
   width: 210px;
   padding: 15px;
@@ -757,13 +824,13 @@ h3 {
   margin-bottom: 25px;
 }
 
-/* line 626, ../scss/style.scss */
+/* line 101, ../scss/layout/_footer.scss */
 .subscribe form {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 631, ../scss/style.scss */
+/* line 106, ../scss/layout/_footer.scss */
 .subscribe .footer-button {
   width: 70px;
   height: 49px;
@@ -774,12 +841,12 @@ h3 {
   background-color: #ffffff;
 }
 
-/* line 641, ../scss/style.scss */
+/* line 116, ../scss/layout/_footer.scss */
 .subscribe .social {
   display: flex;
 }
 
-/* line 645, ../scss/style.scss */
+/* line 120, ../scss/layout/_footer.scss */
 .subscribe .social li {
   width: 35px;
   height: 35px;
@@ -787,7 +854,7 @@ h3 {
   border: 1px solid #ffffff;
   margin-right: 8px;
 }
-/* line 652, ../scss/style.scss */
+/* line 127, ../scss/layout/_footer.scss */
 .subscribe .social li a {
   display: inline-block;
   line-height: 35px;
@@ -796,24 +863,26 @@ h3 {
   color: #fff;
 }
 
-/* line 661, ../scss/style.scss */
+/* line 136, ../scss/layout/_footer.scss */
 .subscribe .social li:last-child {
   margin-right: 0;
 }
 
-/* line 665, ../scss/style.scss */
+/* line 140, ../scss/layout/_footer.scss */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 5;
 }
 
-/* line 670, ../scss/style.scss */
+/* line 147, ../scss/layout/_footer.scss */
 .footer-bottom .footer-menu {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 675, ../scss/style.scss */
+/* line 152, ../scss/layout/_footer.scss */
 .footer-bottom .footer-menu a {
   margin-right: 35px;
   color: #ffffff;
@@ -822,7 +891,7 @@ h3 {
   letter-spacing: 0.35px;
 }
 
-/* line 683, ../scss/style.scss */
+/* line 160, ../scss/layout/_footer.scss */
 .footer-bottom .copyriting {
   color: #ffffff;
   font: 400 14px/26px 'Roboto', sans-serif;

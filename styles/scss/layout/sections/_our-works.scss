@@ -1,0 +1,37 @@
+
+.our-works {
+  padding: 70px 0;
+}
+
+.our-works .portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.our-works .portfolio-header a {
+  color: #413d4b;
+  font: 300 14px 'Roboto', sans-serif;
+  letter-spacing: 0.7px;
+
+  i {
+    font-size: 20px;
+  }
+}
+
+.our-works .portfolio-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+  overflow: hidden;
+
+  li {
+    width: 16.6%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

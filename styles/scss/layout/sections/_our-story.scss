@@ -1,0 +1,23 @@
+
+.our-story {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+
+.our-story-content {
+  max-width: 540px;
+}
+
+.our-story-content h3 {
+  color: #413d4b;
+  margin-bottom: 30px;
+}
+
+.our-story-content p {
+  margin-bottom: 30px;
+  opacity: 0.75;
+  color: #413d4b;
+  font: 300 14px/22px 'Roboto', sans-serif;
+  letter-spacing: 0.42px;
+}

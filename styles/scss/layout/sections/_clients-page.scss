@@ -1,0 +1,55 @@
+
+.clients-page {
+  padding: 70px 0;
+}
+
+.clients-page-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-page-content .form {
+  max-width: 470px;
+}
+
+.clients-page-content .form h3 {
+  margin-bottom: 35px;
+}
+
+.clients-page-content .form input, textarea {
+  width: 460px;
+  padding: 15px;
+  color: #413d4b;
+  font: 300 14px 'Roboto', sans-serif;
+  letter-spacing: 0.7px;
+  border: 1px solid #e5e5e5;
+  opacity: 0.5;
+  resize: none;
+  margin-bottom: 25px;
+}
+
+.clients-page-content .clients {
+  max-width: 385px;
+}
+
+.clients-page-content .clients h3 {
+  margin-bottom: 45px;
+}
+
+.clients-page-content .clients .brands-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.clients-page-content .clients .brands-list li {
+  min-width: 165px;
+  margin-bottom: 45px;
+}
+
+.form-btn {
+  width: 130px;
+  margin: 0;
+  text-align: center;
+  padding: 12px 0;
+}

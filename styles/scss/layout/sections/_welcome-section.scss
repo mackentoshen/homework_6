@@ -1,0 +1,56 @@
+
+.welcome-section {
+  background: url("../../images/put-your-image-here.png") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  position: relative;
+  z-index: 5;
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+    opacity: 0.85;
+    position: absolute;
+  }
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 5;
+  max-width: 770px;
+  padding: 100px 0 70px 0;
+}
+
+.welcome-content h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #ffffff;
+  font: bold 32px 'Playfair Display', serif;
+  letter-spacing: 0.32px;
+
+  &:after {
+    background-color: #00e0d0;
+  }
+}
+
+.welcome-content p {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #ffffff;
+  font: 300 14px/24px 'Roboto', sans-serif;
+  letter-spacing: 0.7px;
+}
+
+.welcome-content .button {
+  margin-bottom: 125px;
+}
+
+.welcome-content img {
+  display: block;
+  margin: 0 auto;
+}
